@@ -7,7 +7,7 @@ from application.models import Pilot, Ship, PilotShip
 class TestBase(TestCase):
     def create_app(self):
         app.config.update(
-            SQLALCHEMY_DATABASE_URI="sqlite:///test.db",
+            SQLALCHEMY_DATABASE_URI="bigdb.cpd8frupo8ft.eu-west-2.rds.amazonaws.com/testDB",
             WTF_CSRF_ENABLED=False
         )
 
